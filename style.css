@@ -1,0 +1,404 @@
+:root {
+    --clrprimary: #FF6D6D;
+    --clrsec:#AE4CCF;
+    --clroffest:#533535;
+    --clracent:#E6CCA9;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body{
+    background-image: linear-gradient(to right, var(--clrprimary) 50%, var(--clrsec) 50%);
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+
+}
+
+nav{
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav img{
+    width: 100px;
+}
+
+nav ul{
+    display: flex;
+
+}
+
+nav ul li{
+    list-style: none;
+
+}
+
+nav .toggler{
+    font-size: 50px;
+    display: none;
+}
+
+nav a{
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.logobox .logoword{
+    color: var(--clroffest);
+    font-family:cursive;
+    letter-spacing: 0.2em;
+}
+
+.logobox a{
+    border: 2px solid var(--clroffest);
+    padding-right: 50px;
+    border-radius: 5px;
+}
+
+.dropdown a{
+    font-size: 20px;
+    color: var(--clracent);
+}
+
+.dropdown a:hover{
+    color: var(--clroffest);
+    font-weight: bolder;
+}
+
+a{
+    text-decoration: none;
+}
+
+main{
+    display: flex;
+    margin-top: 120px;
+    width: 100%;
+}
+
+main .left{
+width: 50%;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+padding-left: 30px;
+}
+
+.left .foota{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.foota p{
+    font-size: 15px;
+    letter-spacing: 0.1em;
+    word-spacing: 0.1em;
+}
+
+.middle{
+width: 50%;
+}
+
+
+    
+
+main .right{
+width: 33%;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+.twodivs{
+    display: flex;
+    width: 67%;
+}
+
+.controls{
+    text-align: center;
+}
+
+
+
+.controls img{
+    width: 50px;
+    background-color: var(--clrprimary);
+    border-radius: 50%;
+    margin: 20px 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.controls img:hover{
+    background-color: var(--clracent);
+    transform: scale(1.2);
+}
+
+.controls h3{
+    font-size: 25px;
+}
+
+.controls span{
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+.smicons{
+text-align: center;
+margin-bottom: 20px;
+}
+
+.smicons img{
+    width: 40px;
+    margin-left: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+.smicons img:hover{
+    transform: translateY(-5px);
+}
+
+footer{
+    display: flex;
+    justify-items: center;
+    justify-content: space-evenly;
+    margin-top:10px;
+}
+
+.writeup .t1{
+    padding: 5px 0 10px;
+    font-size: 50px;
+}
+
+.writeup .t3{
+    font-size: 30px;
+}
+
+.writeup p{
+font-size: 20px;
+margin-bottom: 30px;
+}
+
+.writeup .clink1{
+background-color: var(--clrsec);
+padding: 10px 40px;
+margin: 0 10px;
+border-radius: 25px;
+color: var(--clracent);
+letter-spacing: 0.1em;
+transition: 0.3s ease-in-out;
+}
+
+.writeup .clink1:hover{
+padding: 13px 45px ;
+color: var(--clroffest);
+border: 3px solid var(--clracent);
+
+}
+
+.writeup .clink2{
+    background-color: var(--clracent);
+    padding: 10px 40px;
+    margin: 0 10px;
+    border-radius: 25px;
+    color: var(--clroffest);
+    letter-spacing: 0.1em;
+    transition: 0.3s ease-in-out;
+    }
+
+.writeup .clink2:hover{
+    padding: 13px 45px ;
+    color: var(--clrsec);
+    border: 3px solid var(--clrsec);
+    }    
+
+
+/* ------------------------------------------------------- */
+/* Media Query starst here */
+
+@media (max-width:768px){
+  
+    
+    body{
+        background-image: linear-gradient(to right, var(--clrprimary) 50%, var(--clrsec) 50%);
+        width: 100vw;
+        height: auto;
+        overflow-x: hidden;
+    
+    }
+    .wrapper{
+        width: 100%;
+        padding: 20px;
+    }
+    
+    nav{
+        margin: 10px;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    
+    nav img{
+        width: 50px;
+    }
+    
+    .dropdown{
+        display: none;
+        transition: 1s ease-in;
+    
+    }
+
+    nav .toggler{
+        font-size: 20px;
+        border: 1px solid black;
+        box-shadow: 2px 2px 1px black;
+        border-radius: 5px;
+        padding: 0 5px;
+        display: block;
+    }
+
+    .menu:hover .dropdown{
+        display: block;
+        background-color: var(--clroffest);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        padding-top: 50px;
+        transition: 1s ease-in;
+
+    }
+
+    .menu:hover .toggler{
+        transform: translateX(1px);
+        background-image: url(images/bold-x.png);
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .menu ul li{
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu ul li a{
+        margin: 20px 25%;
+    }
+
+    .menu ul li a:hover{
+        color: var(--clrprimary);
+    }
+    
+      
+    .logobox .logoword{
+        font-size: 15px;
+    }
+    
+    .logobox a{
+        padding-right: 20px;
+        border-radius: 5px;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        width: 100%;
+    }
+    
+    main .left{
+    width: 100%;
+    padding: 0 10%;
+    }
+    
+    .left .foota{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    
+    .foota p{
+        font-size: 13px;
+        letter-spacing: 0;
+        word-spacing: 0;
+        font-weight: bolder;
+        position: absolute;
+        bottom: 10px;
+    }
+    
+    .middle{
+    width: 100%;
+    }
+    
+    .middle img{
+        width: 100%;
+    }
+        
+    
+    main .right{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 20px;
+    }
+    
+
+    .twodivs{
+        flex-direction: column;
+        width:100%;
+    }
+    
+    .smicons img{
+        width: 30px;
+        margin-left: 20px;
+        margin-top: 30px;
+    }
+    
+    .writeup .t1{
+        padding: 5px 0 10px;
+        font-size: 30px;
+    }
+    
+    .writeup .t3{
+        font-size: 15px;
+    }
+    
+    .writeup p{
+    font-size: 14px;
+    }
+    
+    .writeup .clink1{
+    padding: 5px 20px;
+    margin: 0 10px;
+    }
+    
+    .writeup .clink1:hover{
+    padding: 7px 25px ;
+    
+    }
+    
+    .writeup .clink2{
+        padding: 5px 20px;
+        margin: 0 10px;
+        }
+    
+    .writeup .clink2:hover{
+        padding: 7px 25px ;
+        } 
+
+
+}
