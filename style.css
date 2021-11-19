@@ -229,13 +229,13 @@ border: 3px solid var(--clracent);
 @media (max-width:768px){
   
     
-    /* body{
+    body{
         background-image: linear-gradient(to right, var(--clrprimary) 50%, var(--clrsec) 50%);
         width: 100vw;
-        height: 100vh;
-        overflow-x: hidden;
+        height: auto;
+        /* overflow-x: hidden; */
     
-    } */
+    }
     .wrapper{
         width: 100%;
         padding: 10px;
