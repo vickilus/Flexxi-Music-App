@@ -319,8 +319,9 @@ border: 3px solid var(--clracent);
     }
     
     main .left{
+    text-align: center;
     width: 100%;
-    padding: 0 10%;
+    padding: 0 10px;
     }
     
     .left .foota{
