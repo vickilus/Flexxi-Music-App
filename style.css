@@ -93,7 +93,7 @@ justify-content: space-between;
 padding-left: 30px;
 }
 
-.left .foota{
+.foota{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -155,7 +155,7 @@ justify-content: space-between;
 
 .smicons{
 text-align: center;
-margin-bottom: 20px;
+margin-bottom: 0px;
 }
 
 .smicons img{
@@ -327,7 +327,7 @@ border: 3px solid var(--clracent);
     align-items: center;
     }
     
-    .left .foota{
+    .foota{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -339,8 +339,8 @@ border: 3px solid var(--clracent);
         letter-spacing: 0;
         word-spacing: 0;
         font-weight: bolder;
-        position: absolute;
-        bottom: 10px;
+        /* position: absolute;
+        bottom: 10px; */
     }
     
     .middle{
