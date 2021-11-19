@@ -319,9 +319,11 @@ border: 3px solid var(--clracent);
     }
     
     main .left{
-    text-align: center;
+    /* text-align: center; */
     width: 100%;
     padding: 0 10px;
+    display: flex;
+    align-items: center;
     }
     
     .left .foota{
