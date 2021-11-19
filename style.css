@@ -233,7 +233,8 @@ border: 3px solid var(--clracent);
         background-image: linear-gradient(to right, var(--clrprimary) 50%, var(--clrsec) 50%);
         width: 100vw;
         height: auto;
-        /* overflow-x: hidden; */
+        overflow-x: hidden;
+        overflow-y: auto;
     
     }
     .wrapper{
