@@ -331,7 +331,7 @@ border: 3px solid var(--clracent);
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-bottom: 20px;
+        margin: 10px 0;
     }
     
     .foota p{
